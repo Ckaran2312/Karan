@@ -1,27 +1,37 @@
+# UI / Streamlit
 streamlit
+streamlit-webrtc
+
+# Core Audio Libraries
 numpy
 pandas
-json
-os
-datetime
-io
-pydub
 scipy
 librosa
+pydub
+
+# TTS (Text-to-Speech)
 gTTS
+
+# Utility
 qrcode
 Pillow
 fpdf
 base64
-urllib.parse
-# ----------------------------------
-# AI / ML Models and Libraries
-# ----------------------------------
-# Whisper (OpenAI's ASR Model)
+urllib3
+
+# AI / ML Libraries with Specific Fixes
+# 1. Resemblyzer needs a specific version of numpy and the 'V' package
+scipy
+umap-learn
+numba
+# Installing resemblyzer manually
+git+https://github.com/resemblyzer/resemblyzer.git
+
+# 2. OpenAI Whisper for ASR (Speech Recognition)
+# Using the official package name
 openai-whisper
-# Resemblyzer (Voice Encoding)
-resemblyzer
-# Webrtc for real-time mic access
-streamlit-webrtc
-# Optional: If you use Firebase for backup
-# firebase-admin
+
+# 3. Torch and Torchaudio (Required by Whisper/Resemblyzer)
+# Streamlit Cloud uses Linux (Ubuntu), so this generic line works:
+torch==2.3.1
+torchaudio==2.3.1
