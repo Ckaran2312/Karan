@@ -19,19 +19,15 @@ fpdf
 base64
 urllib3
 
-# AI / ML Libraries with Specific Fixes
-# 1. Resemblyzer needs a specific version of numpy and the 'V' package
-scipy
-umap-learn
-numba
-# Installing resemblyzer manually
-git+https://github.com/resemblyzer/resemblyzer.git
+# AI / ML Libraries
+# Resemblyzer (साध्या PyPI इन्स्टॉलवर परत आणले)
+resemblyzer
 
-# 2. OpenAI Whisper for ASR (Speech Recognition)
-# Using the official package name
+# Whisper ASR
 openai-whisper
 
-# 3. Torch and Torchaudio (Required by Whisper/Resemblyzer)
-# Streamlit Cloud uses Linux (Ubuntu), so this generic line works:
+# Core AI Dependencies (Stable Versions)
+umap-learn
+numba
 torch==2.3.1
 torchaudio==2.3.1
