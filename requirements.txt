@@ -20,12 +20,16 @@ base64
 urllib3
 
 # AI / ML Libraries
-# Resemblyzer 
-resemblyzer
+# 1. Resemblyzer (Using stable Git URL)
+git+https://github.com/resemblyzer/resemblyzer.git
 
-# Whisper ASR
-openai-whisper
+# 2. Whisper ASR (Using stable Git URL)
+git+https://github.com/openai/whisper.git
 
-# Core AI Dependencies (Stable and required by Resemblyzer)
+# Core AI Dependencies 
 umap-learn
 numba
+# FINAL FIX: Specify a known stable TORCH version for Linux
+# This version avoids compatibility errors with newer Pythons
+torch==2.3.1
+torchaudio==2.3.1
