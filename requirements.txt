@@ -1,0 +1,27 @@
+streamlit
+numpy
+pandas
+json
+os
+datetime
+io
+pydub
+scipy
+librosa
+gTTS
+qrcode
+Pillow
+fpdf
+base64
+urllib.parse
+# ----------------------------------
+# AI / ML Models and Libraries
+# ----------------------------------
+# Whisper (OpenAI's ASR Model)
+openai-whisper
+# Resemblyzer (Voice Encoding)
+resemblyzer
+# Webrtc for real-time mic access
+streamlit-webrtc
+# Optional: If you use Firebase for backup
+# firebase-admin
