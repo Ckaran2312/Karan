@@ -20,14 +20,12 @@ base64
 urllib3
 
 # AI / ML Libraries
-# Resemblyzer (साधे PyPI इन्स्टॉल)
+# Resemblyzer 
 resemblyzer
 
 # Whisper ASR
 openai-whisper
 
-# Core AI Dependencies (Removing fixed versions for compatibility)
+# Core AI Dependencies (Stable and required by Resemblyzer)
 umap-learn
 numba
-torch
-torchaudio
